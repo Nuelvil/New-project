@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    text-decoration: none;
+}
+body{
+    font-family: 'Doris';
+} 
+
+#home{
+    background-image: url(/Asset/img/New\ Background.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+
+/* Nav-bar */
+.navbar .car .car2 .nav-item{
+    padding-left: 2rem;
+}
+.navbar{
+    background-color: whitesmoke;
+    box-shadow: 2rem;
+}
+.navbar .collapse .car2 .nav-item .nav-link{
+    color: transparent;
+    color: blue;
+    
+}
+.navbar .collapse .car2 .nav-item .nav-link:hover{
+    color: red;
+}
+.navbar .navbar-brand span{
+    color: tomato;
+    font-weight: bolder;
+}
+.navbar .navbar-brand h5{
+    color: rgb(10, 10, 231);
+    font-weight: bolder;
+}
+
+#home .container .row .col .img-fluid{
+    height: 70vh;
+    
+}
+#home .container .row .col span a{
+    padding-left: 10px;
+}
+
+#home .container .row .col .display-5 {
+    font-weight: bolder;
+
+}
+#home .container .row .col .display-5 span{
+    color: rgb(10, 10, 231);
+
+}
+#home .container .row .col .display-2 span{
+    color: tomato;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+
+
+/* About */
+#about{
+    background-color: whitesmoke;
+}
+
+#about .container .row .col img{
+    border-radius: 10rem;
+        
+}
+#about .container .row h4{
+    color: blue;
+
+}
+
+
+#about .container .row .col img{
+        transition: transform .2s; /* Animation */
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+
+}   
+
+
+#about .container .row .col img:hover{
+    transform: scale(1.5)
+
+}
+
+#about .container .row .col .flip-box{
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+#about .container .row .col .flip-box-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+#about .container .row .col .flip-box:hover .flip-box-inner{
+    transform: rotateY(180deg);
+}
+
+#about .container .row .col .flip-box-front, .flip-box-back{
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#about .container .row .col .flip-box-front{
+    background-color: #bb;
+    color: black;
+}
+
+#about .container .row .col .flip-box-back{
+    background-color: whitesmoke;
+    color: white;
+    transform: rotateY(180deg);
+}
+#about .container .row .col .flip-box-back ul{
+    list-style: none;
+}
+
+
+
+
+
+
+#about .container .row .col h5{
+    font-weight: bolder;
+}
+
+#services .container .row .col-sm-12 .bi{
+    padding-right: 4rem;
+    color: rgb(46, 46, 226);
+    align-items: center;
+    justify-content: center;
+    width: 40px;    
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.5s;
+    font-size: 40px;
+    padding-right: 2rem;
+    transition: 2s;
+
+} 
+
+#services .container .row .col-sm-12:hover{
+    padding: .1rem;
+    
+}
+#services .container .row h4{
+    color: blue;
+}
+
+#contact .container .row .col-sm-12 i{
+    font-size: 20px;
+    color: blue;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+
+}
+
+#contact .container .row .col-sm-12 h4{
+    padding-left: 60px;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: rgb(24, 22, 22);
+    margin-left: .3rem;
+
+}
+
+#contact .container .row .col-sm-12 p{
+    margin-left: 3rem;
+}
+
+.swiper-slide img {
+    width: 50vh;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+
+/* Portfolio */
+#portfolio h2{
+    color: blue;
+}
+
+
+  @media(max-width:400px){
+    #home{
+        background-image: url(/Asset/img/New\ Background.jpeg);
+        width: 100%;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+}
